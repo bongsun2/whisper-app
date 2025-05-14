@@ -1,0 +1,5 @@
+streamlit
+yt-dlp
+git+https://github.com/openai/whisper.git
+transformers
+ffmpeg-python
