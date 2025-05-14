@@ -12,7 +12,9 @@ url = st.text_input("유튜브 영상 URL을 입력하세요:")
 
 def download_audio(youtube_url):
     ydl_opts = {
+        'ffmpeg_location': '/usr/bin/ffmpeg',
         'format': 'bestaudio/best',
+
         'outtmpl': 'audio.%(ext)s',
         'postprocessors': [{
             'key': 'FFmpegExtractAudio',
